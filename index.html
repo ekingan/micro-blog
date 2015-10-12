@@ -4,24 +4,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Blank</title>
+    <title>Micro-Blog</title>
 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://bootswatch.com/yeti/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- VENDOR SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+
     <!-- APPLICATION SCRIPTS -->
     <script src="base.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h1>We're in good shape.</h1>
+      <div class="row"> <!--header-->
+        <div class="col-md-10 jumbotron">
+          <h1><strong>Welcome to my micro-blog!</strong></h1>
+            <h4><strong> What are you thinking about right now? </strong></h4>
+        </div>
+        <div class="row"> <!--input for post-->
+          <div class="col-lg-6 col-lg-offset-4">
+            <form action ="" class="form-group">
+            <div class="input-group">
+              <input type="text submit" id="write-post" class="form-control" placeholder="say something...">
+
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-default" type="button">Post!</button>
+              </span>
+            </div>
+            </form><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h5>There have been no blog posts yet.</h5>
+              </div> <!--Count Column-->
+              </div> 
+            </div>
+            <div class="col-lg-8">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <ul class="list-group list-unstlyled" id='post'>
+                  <h3></h3><!-- List group -->
+                  </ul>
+                </div>
+              </div> 
+            </div> 
+          </div>
+        </div>
         </div>
       </div>
     </div>
