@@ -58,7 +58,7 @@ $(document).ready(function(){
    		
    			var countID = '"#' + count + '"';
    			console.log(countID);
-   			
+   			//I want to assign the countID to the jQuery selector but cannot get it to work
    			$('li:eq(0)').append('<div class="well well-sm"><li class="list-unstyled">' + comment + '</li></div>');
    			$('#write-comment').val('');
 
@@ -71,7 +71,7 @@ $(document).ready(function(){
 		$('button').on('click', function(event){
 			event.preventDefault();
 			if (post !== ''){
-				$('li').attr('id', count);
+				$('li').eq(count);
 				console.log(count);
 			}
 		} );
