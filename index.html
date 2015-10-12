@@ -8,7 +8,7 @@
 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://bootswatch.com/yeti/bootstrap.css">
+    <link rel="stylesheet" href="http://bootswatch.com/cosmo/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- VENDOR SCRIPTS -->
@@ -23,8 +23,8 @@
     <div class="container">
       <div class="row"> <!--header-->
         <div class="col-md-10 jumbotron">
-          <h1><strong>Welcome to my micro-blog!</strong></h1>
-            <h4><strong> What are you thinking about right now? </strong></h4>
+          <h1><strong>Create a story...</strong></h1>
+            <h4><strong> One line at a time </strong> </h4>
         </div>
         <div class="row"> <!--input for post-->
           <div class="col-lg-6 col-lg-offset-4">
@@ -33,7 +33,7 @@
               <input type="text submit" id="write-post" class="form-control" placeholder="say something...">
 
               <span class="input-group-btn">
-                <button type="submit" class="btn btn-default" type="button">Post!</button>
+                <button type="submit" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Write your blog post here.">Post</button>
               </span>
             </div>
             </form><!-- /input-group -->
@@ -51,7 +51,10 @@
               <div class="panel panel-default">
                 <div class="panel-body">
                   <ul class="list-group list-unstlyled" id='post'>
-                  <h3></h3><!-- List group -->
+                  <h3></h3>
+                   
+              
+                    <!-- List group -->
                   </ul>
                 </div>
               </div> 

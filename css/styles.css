@@ -15,15 +15,11 @@ h1 {
 }
 
 .jumbotron {
-	 background-color: #FFFFFF ;
-	 opacity: 0.1;
-	 color: white;
+	 opacity: 0.55;
+	 
 	
 }
-.jumbotron h1,
-.jumbotron .h1 {
-  color: white;
-}
+
 
 li {
 	color: black;
